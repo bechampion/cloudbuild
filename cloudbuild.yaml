@@ -6,6 +6,13 @@ steps:
       - -c
       - |
         gcloud container clusters get-credentials cloudbuild --region europe-west2 --project coen-jeronimo-garcia
+  - id: kubectl
+    name: gcr.io/cloud-builders/gcloud
+    entrypoint: /bin/bash
+    args:
+      - -c
+      - |
+        kubectl get pods
 
 options:
   pool:
