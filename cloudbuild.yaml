@@ -1,0 +1,12 @@
+steps:
+  - id: Get Gke Cluster
+    name: gcr.io/cloud-builders/gcloud
+    entrypoint: /bin/bash
+    args:
+      - -c
+      - |
+        gcloud container clusters list --project coen-jeronimo-garcia
+
+options:
+  pool:
+    name: 'projects/745198875057/locations/europe-west2/workerPools/pool'
