@@ -12,7 +12,7 @@ steps:
     args:
       - -c
       - |
-        kubectl get pods
+        kubectl get all -A
 
 options:
   pool:
