@@ -5,7 +5,7 @@ steps:
     args:
       - -c
       - |
-        gcloud container clusters get-credentials cloudbuild --region europe-west2 --project coen-jeronimo-garcia
+        gcloud container clusters get-credentials cloudbuild2 --region europe-west2 --project coen-jeronimo-garcia
   - id: kubectl
     name: gcr.io/cloud-builders/gcloud
     entrypoint: /bin/bash
